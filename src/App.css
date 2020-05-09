@@ -1,0 +1,179 @@
+.App {
+	display: flex;
+	min-width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+.main {
+	display: flex;
+	flex: 1 1;
+	flex-direction: column;
+}
+
+.card {
+	display: flex;
+	flex: 1 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card-article {
+	display: flex;
+	flex: 1 1 50%;
+	height: 350px;
+	max-width: 50%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.card-article .item {
+	display: flex;
+	flex: 1 1;
+	background: #ddd;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 5px;
+	position: relative;
+}
+
+.card-article .item.male {
+	background: #36b1a8;
+}
+
+.card-article .item.female {
+	background: #e4485d;
+}
+
+.card-article .head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+.card-article .head img {
+	border-radius: 100%;
+}
+
+.card-article .head .title {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+.card-article .head h1 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+	color: #fff;
+}
+
+.card-article .head h4 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: .8em;
+	color: #d8d8d8;
+}
+
+.card-article .content {
+	flex: 1 1;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 15px 30px;
+	display: flex;
+}
+
+.card-article .content .city {
+	flex: 2;
+	font-size: 1.2em;
+	color: #545454;
+	border-right: 1px dotted #424242;
+}
+
+.card-article .content .phone {
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	font-size: 10pt;
+	flex-direction: column;
+	justify-content: flex-end;
+	color: #8a8a8a;
+}
+
+.card-article .delete {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: cursive;
+	cursor: pointer;
+}
+
+.header {
+	width: calc(100% - 10px);
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: #444444;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 11pt;
+}
+
+.form {
+	display: flex;
+	min-height: 120px;
+	align-items: center;
+	justify-content: center;
+	background: #777;
+	width: calc(100% - 10px);
+	margin: 0 auto;
+}
+
+.form label {
+	padding: 15px;
+	display: flex;
+	flex: 0;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 9pt;
+}
+
+.form input {
+	margin: 15px;
+	height: 35px;
+	padding: 5px;
+}
+
+.form button {
+	height: 41px;
+	margin: 0;
+	padding: 15px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1px;
+	cursor: pointer;
+	color: #909090;
+	background: #444;
+	border: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.card-article {
+		min-width: 100%;
+		padding: 5px;
+	}
+}
